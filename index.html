@@ -7,13 +7,24 @@
   <title>Calculator</title>
   <link href="calc.css" rel="stylesheet">
   <script src="calc.js" defer></script>
+  <link href="CSS/buttons.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/styles.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="Skrypty/Redirect.js"></script>
 </head>
 <body>
+  <div class="back">
+	<button onclick="redirectBack();" class="medium black round">Powroc do strony glownej</button> <br/>
+  </div>
   <div class="calculator-grid">
     <div class="output">
       <div data-previous-operand class="previous-operand"></div>
       <div data-current-operand class="current-operand"></div>
     </div>
+    
     <button data-all-clear class="span-two">CLEAR</button>
     <button data-delete>DEL</button>
     <button data-operation>÷</button>
@@ -33,5 +44,10 @@
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
   </div>
+<audio id="audiosource">
+	<source type="audio/mpeg"></source>
+</audio>	
+	<script src="https://lukasz26671.github.io/Skrypty/main.js"></script>
+	<script src="https://lukasz26671.github.io/Skrypty/audio.js"></script>
 </body>
 </html>
