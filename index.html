@@ -13,11 +13,34 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://lukasz26671.github.io/CSS/style.css">
+    <link rel="stylesheet" href="https://lukasz26671.github.io/CSS/main.css">
+    <link rel="stylesheet" href="https://lukasz26671.github.io/CSS/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 </head>
-<body id="landing">
+<body class="landing">
+        <audio id="audiosource">
+                <source type="audio/mpeg"></source>
+            </audio>
 
-	
-  <div class="calculator-grid">
+    <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header" class="alt">
+                    <h1><a href="index.html">Lukasz26671</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li class="special">
+                                <a href="#menu2" class="menuToggle"><span>Menu</span></a>			
+                            </li>
+                        </ul>
+                    </nav>
+            </header>
+		 <section class="wrapper style6 special">
+                    <div class="inner">
+                        <header class="major">
+                            <div class="calculator-grid">
     <div class="output">
       <div data-previous-operand class="previous-operand"></div>
       <div data-current-operand class="current-operand"></div>
@@ -42,8 +65,17 @@
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
   </div>
-
+                        </header>
+		</section>   
+    </div>
+<div id="menu2">
 		<ul>
+			<li><a onClick="redirectMcMod();" href="#MinecraftMody">Mody</a></li>	
+			<li><a onClick="redirectMain2();" href="#Kalkulator">Kalkulator</a></li>	
+			<li><a onClick="redirectMain3();" href="#Źródła">Źródła</a></li>	
+			<li><a onClick="redirectContact();" href="#Kontakt">Kontakt</a></li>	
+			<li><a onClick="redirectBot();" href="#Bot">Bot</a></li>
+			<li><a onClick="alert('Hello World!');"href="#HelloWorld">Hello World</a></li>	
             <li>
                 <br>
                 <p id="song"></p>                
@@ -62,19 +94,18 @@
                     </li>
             
 		</ul>
-
-<audio id="audiosource">
-	<source type="audio/mpeg"></source>
-</audio>	
-	<script src="https://lukasz26671.github.io/Skrypty/main.js"></script>
-	<script src="https://lukasz26671.github.io/Skrypty/audio.js"></script>
-        <script src="https://lukasz26671.github.io/Skrypty/jquery.min.js"></script>
-        <script src="https://lukasz26671.github.io/Skrypty/jquery.scrollex.min.js"></script>
-	<script src="https://lukasz26671.github.io/Skrypty/jquery.scrolly.min.js"></script>
-	<script src="https://lukasz26671.github.io/Skrypty/skel.min.js"></script>
-	<script src="https://lukasz26671.github.io/Skrypty/util.js"></script>
-        <script src="https://lukasz26671.github.io/Skrypty/main2.js"></script>
+            <a href="index.html#menu2" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a>
+	</div>
+    <!--Scripts-->
+    <script src="Skrypty/main.js"></script>
+    <script src="Skrypty/jquery.min.js"></script>
+    <script src="Skrypty/jquery.scrollex.min.js"></script>
+	<script src="Skrypty/jquery.scrolly.min.js"></script>
+	<script src="Skrypty/skel.min.js"></script>
+	<script src="Skrypty/util.js"></script>
+    <script src="Skrypty/main2.js"></script>
+    <script src="Skrypty/audio.js"></script>
 	<script src="https://kit.fontawesome.com/c453ad6d0a.js"></script>
-	<script src="https://lukasz26671.github.io/Skrypty/Redirect.js"></script>
+	<script src="Skrypty/Redirect.js"></script>
 </body>
 </html>
