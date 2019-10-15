@@ -16,9 +16,17 @@
   <script src="Skrypty/Redirect.js"></script>
 </head>
 <body>
-  <div class="back">
-	<button onclick="redirectBack();" class="medium black round">Powroc do strony glownej</button> <br/>
-  </div>
+  <!-- Header -->
+            <header id="header" class="alt">
+                    <h1><a href="index.html">Lukasz26671</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li class="special">
+                                <a href="#menu2" class="menuToggle"><span>Menu</span></a>			
+                            </li>
+                        </ul>
+                    </nav>
+            </header>
   <div class="calculator-grid">
     <div class="output">
       <div data-previous-operand class="previous-operand"></div>
@@ -44,6 +52,33 @@
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
   </div>
+<div id="menu2">
+		<ul>
+			<li><a onClick="redirectMcMod();" href="#MinecraftMody">Mody</a></li>	
+			<li><a onClick="redirectMain2();" href="#Kalkulator">Kalkulator</a></li>	
+			<li><a onClick="redirectMain3();" href="#Źródła">Źródła</a></li>	
+			<li><a onClick="redirectContact();" href="#Kontakt">Kontakt</a></li>	
+			<li><a onClick="redirectBot();" href="#Bot">Bot</a></li>
+			<li><a onClick="alert('Hello World!');"href="#HelloWorld">Hello World</a></li>	
+            <li>
+                <br>
+                <p id="song"></p>                
+                <div class="content" id="content">
+                    <div class="controls">
+                        <div class="controlbuttons">
+                            <i class="material-icons" id="prev">fast_rewind</i>
+                            <i class="material-icons" id="playpause">play_arrow</i><!--playpause - changes-->
+                            <i class="material-icons" id="next">fast_forward</i>
+                        </div>		
+                    </div>
+                    <div id="progresscontainer">
+                        <div id="progressbar"></div>
+                    </div>	
+                </div>
+                    </li>
+            
+		</ul>
+            <a href="index.html#menu2" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a>
 <audio id="audiosource">
 	<source type="audio/mpeg"></source>
 </audio>	
