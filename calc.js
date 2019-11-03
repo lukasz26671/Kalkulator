@@ -95,54 +95,73 @@ function keyboardHandling(e) {
       case 46: //del
         calculator.delete()
         calculator.updateDisplay()
+      break;
       case 45: //enter
         calculator.compute()
         calculator.updateDisplay()
+      break;
       case 48: //0
         calculator.appendNumber(numberbuttons[0].innerText)
         calculator.updateDisplay()
+      break;
       case 49: //1
         calculator.appendNumber(numberbuttons[1].innerText)
         calculator.updateDisplay()
+      break;
       case 50: //2
         calculator.appendNumber(numberbuttons[2].innerText)
         calculator.updateDisplay()
+      break;
       case 51: //3
         calculator.appendNumber(numberbuttons[3].innerText)
         calculator.updateDisplay() 
+      break;
       case 52: //4
         calculator.appendNumber(numberbuttons[4].innerText)
         calculator.updateDisplay()
+      break;
       case 53: //5
         calculator.appendNumber(numberbuttons[5].innerText)
         calculator.updateDisplay()
+      break;
       case 54: //6
         calculator.appendNumber(numberbuttons[6].innerText)
         calculator.updateDisplay()
+      break;
       case 55: //7
         calculator.appendNumber(numberbuttons[7].innerText)
         calculator.updateDisplay()
+      break;
       case 56: //8
         calculator.appendNumber(numberbuttons[8].innerText)
         calculator.updateDisplay()
+      break;
       case 110: //.
         calculator.appendNumber(numberbuttons[9].innerText)
         calculator.updateDisplay()
+      break;
       case 57: //10
         calculator.appendNumber(numberbuttons[10].innerText)
         calculator.updateDisplay()
+      break;
       case 106: //*
         calculator.chooseOperation(operationButtons[1].innerText)
         calculator.updateDisplay()
+      break;
       case 107: //+
         calculator.chooseOperation(operationButtons[2].innerText)
         calculator.updateDisplay()
+      break;
       case 109: //-
         calculator.chooseOperation(operationButtons[3].innerText)
         calculator.updateDisplay()
+      break;
       case 111: //:
         calculator.chooseOperation(operationButtons[0].innerText)
         calculator.updateDisplay()   
+      break;
+    default:
+      return;
   }
 }
 
