@@ -48,6 +48,10 @@ class Calculator {
       case '÷':
         computation = prev / current
         break
+      case '√':
+        computation = Math.sqrt(prev)
+      case '∛':
+        computation = Math.cbrt(prev)
       default:
         return
     }
