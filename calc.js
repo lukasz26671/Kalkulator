@@ -49,9 +49,9 @@ class Calculator {
         computation = prev / current
         break
       case '√':
-        computation = Math.sqrt(current)
+        computation = prev * Math.sqrt(current)
       case '∛':
-        computation = Math.cbrt(current)
+        computation = prev * Math.cbrt(current)
       default:
         return
     }
