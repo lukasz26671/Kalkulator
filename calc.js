@@ -161,7 +161,7 @@ function keyboardHandling(e) {
         calculator.updateDisplay()   
       break;
     default:
-      return;
+      return null;
   }
 }
 
