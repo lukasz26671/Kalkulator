@@ -89,6 +89,62 @@ class Calculator {
   }
 }
 
+function keyboardHandling(e) {
+  let keycode = e.which
+  switch (keycode) {
+      case 46: //del
+        calculator.delete()
+        calculator.updateDisplay()
+      case 45: //enter
+        calculator.compute()
+        calculator.updateDisplay()
+      case 48: //0
+        calculator.appendNumber(numberbuttons[0].innerText)
+        calculator.updateDisplay()
+      case 49: //1
+        calculator.appendNumber(numberbuttons[1].innerText)
+        calculator.updateDisplay()
+      case 50: //2
+        calculator.appendNumber(numberbuttons[2].innerText)
+        calculator.updateDisplay()
+      case 51: //3
+        calculator.appendNumber(numberbuttons[3].innerText)
+        calculator.updateDisplay() 
+      case 52: //4
+        calculator.appendNumber(numberbuttons[4].innerText)
+        calculator.updateDisplay()
+      case 53: //5
+        calculator.appendNumber(numberbuttons[5].innerText)
+        calculator.updateDisplay()
+      case 54: //6
+        calculator.appendNumber(numberbuttons[6].innerText)
+        calculator.updateDisplay()
+      case 55: //7
+        calculator.appendNumber(numberbuttons[7].innerText)
+        calculator.updateDisplay()
+      case 56: //8
+        calculator.appendNumber(numberbuttons[8].innerText)
+        calculator.updateDisplay()
+      case 110: //.
+        calculator.appendNumber(numberbuttons[9].innerText)
+        calculator.updateDisplay()
+      case 57: //10
+        calculator.appendNumber(numberbuttons[10].innerText)
+        calculator.updateDisplay()
+      case 106: //*
+        calculator.chooseOperation(operationButtons[1].innerText)
+        calculator.updateDisplay()
+      case 107: //+
+        calculator.chooseOperation(operationButtons[2].innerText)
+        calculator.updateDisplay()
+      case 109: //-
+        calculator.chooseOperation(operationButtons[3].innerText)
+        calculator.updateDisplay()
+      case 111: //:
+        calculator.chooseOperation(operationButtons[0].innerText)
+        calculator.updateDisplay()   
+  }
+}
 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
@@ -105,8 +161,7 @@ numberButtons.forEach(button => {
     calculator.appendNumber(button.innerText)
     calculator.updateDisplay()
   })
-})
-
+}}
 operationButtons.forEach(button => {
   button.addEventListener('click', () => {
     calculator.chooseOperation(button.innerText)
@@ -128,3 +183,4 @@ deleteButton.addEventListener('click', button => {
   calculator.delete()
   calculator.updateDisplay()
 })
+document.addEventListener("keydown", keyboardHandling(event))
